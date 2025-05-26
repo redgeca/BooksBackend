@@ -46,4 +46,14 @@ public class BookService {
             throw new RuntimeException("Book not found");
         }
     }
+    
+    public void deleteBook(Long id) {
+    	bookRepository.deleteById(id);
+    }
+    
+    public void deleteBooks(List<Long> ids) {
+    	bookRepository.deleteAllById(ids);
+    }
+    
+    
 }
