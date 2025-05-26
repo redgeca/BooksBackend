@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: BooksBackend
+    
+  datasource:
+    url: jdbc:mysql://localhost:3306/bookstore
+    username: root
+    password: Apsodi81
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    
+ 
